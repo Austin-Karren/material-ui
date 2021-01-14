@@ -7,7 +7,7 @@ import Typography from '../components/Typography';
 
 const styles = (theme) => ({
   root: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(w),
     marginBottom: theme.spacing(4),
   },
   images: {
@@ -149,7 +149,7 @@ function ProductCategories(props) {
         For all tastes and all desires
       </Typography>
       <div className={classes.images}>
-        {images.map((image) => (
+        {images.map((image) => ( 
           <ButtonBase
             key={image.title}
             className={classes.imageWrapper}
